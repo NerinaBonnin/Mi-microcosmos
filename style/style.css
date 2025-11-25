@@ -1,0 +1,110 @@
+:root{
+    --color-primario: #5a0e18;
+    --color-secundario: #7c1c28;
+    --color-terciario: #e8c4c4;
+    --color-cuartario: #f2ece8;
+    --color-quintario: #c9a86a;
+    --color-sextario: #0c0c0e;
+}
+
+@font-face {
+    font-family: "sego";
+    src: url(/fonts/SEGO.otf) format(truetype);
+}
+
+@font-face {
+    font-family: "souvenir";
+    src: url(/fonts/Souvenir.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "souvenir-bold";
+    src: url(/fonts/SouvenirB.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "souvenir-ligth";
+    src: url(/fonts/SouvenirI.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "time-new-roman";
+    src: url(/fonts/Times\ New\ Roman\ MT\ Condensed\ Regular.otf) format(truetype);
+}
+
+
+body {
+    background-color: #FDF7F0;
+    color: #3A3A3A;
+}
+
+
+.container img{
+    width: 40px;
+    margin-right: 30px;
+}
+
+
+.container h1{
+    font-size: 60px;
+}
+
+h1{
+    font-family: sego;
+}
+
+
+h2, h3, h4 {
+    font-family: souvenir;
+    color: var(--color-secundario); /* Borgoña suave */
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-sextario);
+}
+
+a:hover {
+    color: var(--color-secundario); 
+}
+
+.navbar {
+  padding-top: 2rem;   /* Aumenta el espacio superior */
+  padding-bottom: 2rem; /* Aumenta el espacio inferior */
+  min-height: 90px;    /* Asegura un mínimo de altura, ajusta el valor según lo que busques */
+}
+
+
+.nav-link {
+    font-family: time-new-roman;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-link {
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  padding-bottom: 2px;
+  border-radius: 1px;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid var(--color-secundario); /* Cambia #b22525 por el color que prefieras */
+}
+
+
+p{
+    font-family: times-new-roman;
+}
+
+footer {
+    background-color: var(--color-sextario);
+    margin-top: 400px;
+    border-top: 1px solid #E2D7C7;
+    color: var(--color-cuartario);
+}
+
+img.grain {
+    filter: contrast(110%) brightness(95%);
+}
