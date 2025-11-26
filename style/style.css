@@ -34,8 +34,8 @@
 
 
 body {
-    background-color: #FDF7F0;
-    color: #3A3A3A;
+    background-color: var(--color-cuartario);
+    color: var(--color-sextario);
 }
 
 
@@ -44,6 +44,19 @@ body {
     margin-right: 30px;
 }
 
+.container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+}
+
+.container-img img {
+  max-width: 1000px; /* Ajusta este valor según el tamaño deseado */
+  max-height: 900px; /* Puedes ajustarlo o solo usar max-width */
+  width: 100%;       /* Se adapta pero no excede max-width */
+  height: auto;      /* Mantiene la proporción */
+}
 
 .container h1{
     font-size: 60px;
@@ -51,6 +64,7 @@ body {
 
 h1{
     font-family: sego;
+    color: var(--color-primario);
 }
 
 
@@ -96,6 +110,7 @@ a:hover {
 
 p{
     font-family: times-new-roman;
+    font-size: 20px;
 }
 
 footer {
