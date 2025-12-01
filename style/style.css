@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --color-primario: #5a0e18;
     --color-secundario: #7c1c28;
@@ -36,8 +41,12 @@
 body {
     background-color: var(--color-cuartario);
     color: var(--color-sextario);
+    padding: 40px 20px;
 }
 
+.navbar{
+    margin-top: 0;
+}
 
 .container img{
     width: 40px;
@@ -64,7 +73,10 @@ body {
 
 h1{
     font-family: sego;
-    color: var(--color-primario);
+    font-size: 4rem;
+    color: #5a2d2d;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
 
@@ -83,9 +95,15 @@ a:hover {
 }
 
 .navbar {
-  padding-top: 2rem;   /* Aumenta el espacio superior */
-  padding-bottom: 2rem; /* Aumenta el espacio inferior */
-  min-height: 90px;    /* Asegura un mínimo de altura, ajusta el valor según lo que busques */
+    position: fixed;      /* Se fija en la pantalla */
+    top: 0;               /* Pegado al borde superior */
+    left: 0;
+    width: 100%;          /* Ocupa todo el ancho */
+    background-color: #5A0E18;  /* Tu color vino */
+    color: white;
+    padding: 15px 20px;
+    z-index: 900;        /* Se mantiene encima de todo */
+    backdrop-filter: blur(6px);
 }
 
 
@@ -110,13 +128,155 @@ a:hover {
 
 p{
     font-family: times-new-roman;
+     font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.container p{
+    font-size: 24px;
+}
+
+.portada{
+    margin: 100px auto 0 auto;
+}
+
+.btn-custom {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid #5a2d2d;
+    color: #5a2d2d;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5a2d2d;
+    color: #e8ddd3;
+    border-color: #5a2d2d;
+}
+
+.gallery-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    margin-bottom: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+.carousel-indicators .active {
+     background-color: #fff;
+}
+
+.container-mi{
+    margin: 100px auto 0 auto; /* arriba, derecha, abajo, izquierda */
+    text-align: center;
+    width: 50%; /* opcional pero queda más elegante */
+}
+
+.container-mi p{
+    font-family: Time-new-roman;
     font-size: 20px;
 }
+
+.container-mi h2{
+    font-size: 40px;
+}
+
+.post{
+    margin: 125px auto 0 auto;
+}
+
+.post h5{
+    font-family: souvenir-bold;
+    color: var(--color-primario);
+}
+
+.card-noticia {
+  /* 1. La imagen cubre todo el cuadro */
+  width: 300px; /* Ajusta el ancho según necesites */
+  height: 200px; /* Ajusta la altura según necesites */
+  border-radius: 8px; /* Borde redondeado */
+  overflow: hidden; /* Asegura que la imagen no se salga del borde */
+  position: relative; /* Esencial para posicionar el contenido y el degradado */
+  
+  /* Reemplaza 'ruta/a/tu/imagen.jpg' con la URL de la imagen de tu noticia */
+  background-image: url('ruta/a/tu/imagen.jpg'); 
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center center; /* Centra la imagen */
+}
+
+/* El contenedor para el degradado y el texto */
+.contenido-superpuesto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px; /* Espaciado interno para el texto */
+  display: flex; /* Para alinear el contenido */
+  flex-direction: column;
+  justify-content: flex-end; /* Alinea el contenido (título) abajo */
+
+  /* 2. Sombra degradada de abajo hacia arriba */
+  background: linear-gradient(
+    to top, /* Dirección: de abajo hacia arriba */
+    rgba(0, 0, 0, 0.8) 0%, /* Negro semi-transparente en la parte inferior */
+    rgba(0, 0, 0, 0.4) 50%, /* Menos oscuro a la mitad */
+    rgba(0, 0, 0, 0) 100% /* Transparente en la parte superior */
+  );
+}
+
+.titulo-noticia {
+  color: white; /* Color del texto para que se vea sobre el degradado oscuro */
+  font-size: 1.2rem;
+  margin-bottom: 5px; /* Espacio con el resumen */
+}
+
+.resumen-noticia {
+  color: #ccc; /* Un gris claro para el texto de resumen */
+  font-size: 0.9rem;
+}
+
+/* 3. Se quita el botón 'Leer más' simplemente no incluyéndolo en el HTML. 
+   Si el botón existe en otras tarjetas y solo quieres ocultarlo, podrías usar: */
+/*
+.boton-leer-mas {
+    display: none; 
+}
+*/
+
 
 footer {
     background-color: var(--color-sextario);
     margin-top: 400px;
     border-top: 1px solid #E2D7C7;
+}
+
+footer p{
     color: var(--color-cuartario);
 }
 
