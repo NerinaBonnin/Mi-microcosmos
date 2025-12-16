@@ -37,11 +37,23 @@
     src: url(/fonts/Times\ New\ Roman\ MT\ Condensed\ Regular.otf) format(truetype);
 }
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 body {
     background-color: var(--color-cuartario);
     color: var(--color-sextario);
-    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -293,6 +305,11 @@ p{
 
 /*mis fav del mes*/
 /* Sección general */
+main {
+    flex: 1; /* Esto hace que el main ocupe todo el espacio disponible */
+}
+
+
 .favoritos-section {
     margin-top: 120px;
     text-align: center;
@@ -312,6 +329,10 @@ p{
 
 
 /* --- TARJETAS --- */
+
+.favoritos-section {
+    margin-bottom: 100px;
+}
 
 .favorito-card {
     width: 100%;
@@ -384,21 +405,52 @@ p{
     margin: 2px 0 0 0;
 }
 
-
-
-
-
-
-footer {
-    background-color: var(--color-sextario);
-    margin-top: 900px;
-    border-top: 1px solid #E2D7C7;
-}
-
-footer p{
-    color: var(--color-cuartario);
-}
-
 img.grain {
     filter: contrast(110%) brightness(95%);
 }
+
+footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: var(--color-sextario);
+    border-top: 1px solid #E2D7C7;
+    padding: 16px 0;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: -50px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+.footer-nav a {
+    font-family: time-new-roman;
+    font-size: 0.95rem;
+    color: var(--color-cuartario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-secundario);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-cuartario);
+    opacity: 0.8;
+}
+
+
+
