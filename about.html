@@ -1,11 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi microcosmos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
 </head>
-<body>
-    <h1>Esta es la pagina sobre mi</h1>
-</body>
-</html>
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container">
+                <img src="img/favicon.webp" alt="">
+                <a class="navbar-brand fw-bold" href="index.html">Mi microcosmos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="foro.html">Foro de Ideas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="espacio.html">Tu espacio seguro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="redes-sociales.html">Redes sociales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-5">
+
+        <!-- HERO -->
+        <section class="about-hero row align-items-center g-4 mb-5">
+            <div class="col-lg-6">
+                <h1 class="about-title fw-bold mb-3">Hola, soy Neri </h1>
+                <p class="about-lead">Este blog es mi microcosmos: pensamientos, momentos, obsesiones lindas, cosas raras que me intrigan,y un espacio donde vos también podés estar.</p>
+                <div class="about-actions mt-3">
+                    <a class="btn btn-outline-dark me-2" href="blog.html">Leer mi blog</a>
+                    <a class="btn btn-outline-dark" href="espacio.html">Contarme algo</a>
+                </div>
+            </div>
+            
+            <!-- mini chips -->
+            <div class="about-chips mt-4">
+                <span class="chip">☕ té & atardeceres</span>
+                <span class="chip">🥋 Taekwon-Do</span>
+                <span class="chip">📚 leer & escribir</span>
+                <span class="chip">🕯️ terror & paranormal</span>
+            </div>
+            <div class="col-lg-6 text-center">
+        
+            <!-- Poné tu foto -->
+            <div class="about-photo-wrap mx-auto">
+                <img src="img/tu-foto.jpg" alt="Foto de Neri" class="about-photo grain">
+            </div>
+      
+        </section>
+
+        <!-- BLOQUE: "mi versión corta" + "lo que me define" -->
+        <section class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="about-card p-4">
+                    <h2 class="h3 fw-bold mb-3">Mi versión corta</h2>
+                    <p class="mb-0">Soy curiosa, sensible y bastante observadora. Me gusta lo simple, pero también me fascina lo oscuro (de forma estética, prometo). Me encanta crear, investigar cosas que dan escalofríos, y encontrar significado en detalles chiquitos.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-card p-4">
+                    <h2 class="h3 fw-bold mb-3">Cosas que me definen</h2>
+                    <ul class="about-list mb-0">
+                        <li><strong>Mi ritual:</strong> té + música + algo para anotar.</li>
+                        <li><strong>Mi mood:</strong> “calma” con un toque de misterio.</li>
+                        <li><strong>Mi talento oculto:</strong> obsesionarme con un tema 3 días seguidos.</li>
+                        <li><strong>Mi debilidad:</strong> historias, símbolos, teorías.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE PERSONAL -->
+        <section class="mb-5">
+            <div class="d-flex align-items-end justify-content-between gap-3 mb-3">
+                <div>
+                    <h2 class="fw-bold mb-1">Mini línea del tiempo</h2>
+                    <p class="mb-0 about-muted">Momentos simples que me fueron armando.</p>
+                </div>
+                <button id="toggleTimeline" class="btn btn-outline-dark btn-sm">Mostrar/ocultar</button>
+            </div>
+
+            <div id="timeline" class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">Antes</p>
+                        <h3 class="timeline-title">Me fui conociendo</h3>
+                        <p class="timeline-text">Aprendí a escucharme más, a bajar un cambio y a elegir lo que me hace bien.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">Hace un tiempo</p>
+                        <h3 class="timeline-title">Empecé a crear en serio</h3>
+                        <p class="timeline-text">Me animé a compartir ideas, historias y pensamientos con una estética propia.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-date">Ahora</p>
+                        <h3 class="timeline-title">Este microcosmos</h3>
+                        <p class="timeline-text">Un lugar para escribir, debatir teorías y hacer comunidad de forma cuidada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAVORITOS (moodboard mini) -->
+        <section class="mb-5">
+            <h2 class="fw-bold mb-1">Mis favoritos (versión mini)</h2>
+            <p class="about-muted mb-4">Cositas que me gustan y me representan.</p>
+            
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="fav-tile">
+                        <p class="fav-label">📖 Libro</p>
+                        <p class="fav-text">Historias con atmósfera</p>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3">
+                    <div class="fav-tile">
+                        <p class="fav-label">🎧 Música</p>
+                        <p class="fav-text">Playlists para pensar</p>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-3">
+                    <div class="fav-tile">
+                        <p class="fav-label">🕯️ Estética</p>
+                    <p class="fav-text">Grain + tonos cálidos</p>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-3">
+                <div class="fav-tile">
+                    <p class="fav-label">🌙 Tema</p>
+                    <p class="fav-text">Misterios de internet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="about-cta p-4 p-md-5">
+            <h2 class="fw-bold mb-2">Si llegaste hasta acá…</h2>
+            <p class="mb-3"> Contame algo tuyo o respondé una pregunta en el Foro de Ideas. Me gusta leerlos.</p>
+            <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-outline-dark" href="foro.html">Ir al Foro de Ideas</a>
+                <a class="btn btn-outline-dark" href="espacio.html">Tu espacio seguro</a>
+            </div>
+        </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="text-center py-4">
+            <nav class="footer-nav">
+                <a href="index.html">Inicio</a>
+                <a href="about.html">Sobre mí</a>
+                <a href="blog.html">Blog</a>
+                <a href="foro.html">Foro de Ideas</a>
+                <a href="espacio.html">Tu espacio seguro</a>
+                <a href="redes-sociales.html">Redes sociales</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="small">© 2025 Neri — Mi microcosmos</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/about.js"></script>
+
+    </body>
