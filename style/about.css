@@ -140,9 +140,9 @@ a:hover {
 }
 
 .about-title{
-    margin-top: 50px;
-    color: #5a0e18;
-    letter-spacing: -0.5px;
+  margin-top: 50px;
+  color: #5a0e18;
+  letter-spacing: -0.5px;
 }
 
 .about-lead{
@@ -186,6 +186,17 @@ a:hover {
   padding: 8px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
+}
+
+.about-chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.about-kicker{
+  text-align: center;
 }
 
 /* cards */
@@ -282,6 +293,28 @@ a:hover {
   border: 1px solid #e8c4c4;
   background: rgba(232,196,196,0.25);
 }
+
+.about-actions{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about-chips{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-lead{
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 
 
 
