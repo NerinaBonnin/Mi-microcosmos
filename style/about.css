@@ -132,6 +132,17 @@ a:hover {
   border-bottom: 4px solid var(--color-secundario); /* Cambia #b22525 por el color que prefieras */
 }
 
+.about-hero{
+  max-width: 1400px;     /* probá 1400 / 1500 si querés más */
+  margin: 0 auto;
+  padding: 0 24px;       /* margen lateral */
+}
+
+.about-hero .col-lg-8{
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
 
 .about-kicker{
   color: #7c1c28;
@@ -143,12 +154,16 @@ a:hover {
   margin-top: 50px;
   color: #5a0e18;
   letter-spacing: -0.5px;
+  text-align: center;
 }
 
 .about-lead{
-  max-width: 620px;
+  max-width: 1200px;
   color: #0c0c0e;
   font-size: 1.05rem;
+  margin: 0 auto;
+  text-align: left;       /* mejor lectura para texto largo */
+  line-height: 1.9;
 }
 
 .about-muted{
@@ -309,10 +324,43 @@ a:hover {
 }
 
 .about-lead{
-  max-width: 620px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto 1.6rem auto;
   text-align: center;
+  line-height: 1.9;
+  font-family: souvenir-ligth;
 }
+
+/* Frases destacadas */
+.highlight {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+  padding: 0 4px;
+}
+
+/* Subrayado suave */
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15em;
+  width: 0%;
+  height: 0.5em;
+  background: rgba(124, 24, 36, 0.25); /* tu color vino suave */
+  z-index: -1;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+/* Cuando entra en pantalla */
+.highlight.active::after {
+  width: 100%;
+}
+
+
+
+
 
 
 
