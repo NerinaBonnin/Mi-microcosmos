@@ -74,4 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// ==================================
+  // 4) HORA DE COSAS QUE ME DEFINEN
+  // ================================
+
+const dateEl = document.getElementById("newspaperDate");
+if (dateEl) {
+  const now = new Date();
+  dateEl.textContent = now.toLocaleDateString("es-AR", { day: "2-digit", month: "long", year: "numeric" });
+}
+
+
 

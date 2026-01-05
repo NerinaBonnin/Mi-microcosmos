@@ -201,6 +201,7 @@ a:hover {
   padding: 8px 12px;
   border-radius: 999px;
   font-size: 0.9rem;
+  font-family: souvenir;
 }
 
 .about-chips{
@@ -215,31 +216,68 @@ a:hover {
 }
 
 /* cards */
-.about-card{
-  border: 1px solid #e8c4c4;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+.about-defines {
+  margin: 7rem auto;
+  display: flex;
+  justify-content: center;
 }
 
-.about-list{
-  padding-left: 18px;
+.defines-card {
+  max-width: 680px;
+  background: #fff;
+  padding: 3rem 3.5rem;
+  border-radius: 22px;
+  border: 1px solid rgba(90,14,24,0.15);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.defines-title {
+  font-family: souvenir-bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #5a0e18;
+}
+
+.defines-item {
+  margin-bottom: 1.6rem;
+}
+
+.defines-label {
+  display: block;
+  font-weight: 600;
+  color: #7c1c28;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.defines-item p {
   margin: 0;
-}
-
-.about-list li{
-  margin-bottom: 10px;
+  font-size: 1.05rem;
   color: #0c0c0e;
+  line-height: 1.6;
+  font-family: time-new-roman;
 }
 
-.about-list li:last-child{
-  margin-bottom: 0;
+.defines-card::before,
+.defines-card::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(90,14,24,0.15);
+  margin: 2rem 0;
 }
+
+
 
 /* timeline */
 .timeline{
   border-left: 2px solid #e8c4c4;
-  padding-left: 18px;
+  padding-left: 2.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .timeline-item{
@@ -283,6 +321,7 @@ a:hover {
   padding: 18px;
   min-height: 120px;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  text-align: center;
 }
 
 .fav-tile:hover{
@@ -301,6 +340,32 @@ a:hover {
   margin: 0;
   color: #0c0c0e;
 }
+
+.fav-section{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.fav-inner{
+  max-width: 1000px;     /* ancho cómodo */
+  margin: 0 auto;        /* centra */
+  padding: 0 1.5rem;     /* aire a los costados (mobile) */
+}
+
+.fav-section {
+  text-align: center;
+}
+
+.fav-title {
+  margin-bottom: 0.3rem;
+}
+
+.fav-subtitle {
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+
 
 /* CTA */
 .about-cta{
@@ -501,5 +566,159 @@ footer p {
   color: var(--color-primario);
 }
 
+/* ====== PORTADA DIARIO VIEJO ====== */
+.newspaper-wrap{
+  margin: 5.5rem auto;              /* aire arriba/abajo */
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.newspaper-card{
+  width: 100%;
+  max-width: 980px;                 /* MÁS ANCHO */
+  background: #f2ece8;              /* tu paleta */
+  border-radius: 18px;
+  border: 1px solid var(--color-quintario);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  padding: 2.4rem 2.8rem 2rem;      /* menos alto */
+  position: relative;
+  overflow: hidden;
+}
+
+/* textura papel viejo */
+.newspaper-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(1200px 500px at 20% 10%, rgba(90,14,24,0.06), transparent 60%),
+    radial-gradient(900px 450px at 80% 30%, rgba(12,12,14,0.05), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 10px);
+  mix-blend-mode: multiply;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* borde “marco” interior */
+.newspaper-card::after{
+  content:"";
+  position:absolute;
+  inset:14px;
+  border: 1px dashed var(--color-quintario);
+  border-radius: 14px;
+  pointer-events: none;
+}
+
+/* HEADER */
+.newspaper-header{
+  position: relative;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.newspaper-kicker{
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(12,12,14,0.70);
+  margin-bottom: 0.6rem;
+}
+
+.newspaper-title{
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  color: #5a0e18;
+  margin: 0 0 0.6rem;
+}
+
+.newspaper-meta{
+  display: inline-flex;
+  gap: 0.55rem;
+  align-items: center;
+  font-size: 0.95rem;
+  color: rgba(12,12,14,0.72);
+}
+
+.newspaper-rule{
+  height: 1px;
+  background: rgba(90,14,24,0.25);
+  margin: 1.1rem auto 0;
+  width: min(540px, 85%);
+}
+
+.newspaper-rule.thin{
+  opacity: 0.7;
+  width: min(420px, 75%);
+}
+
+/* BODY: 2 columnas en desktop, 1 en mobile */
+.newspaper-body{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* look “diario” */
+  gap: 1.4rem 2.2rem;
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 768px){
+  .newspaper-card{ padding: 2rem 1.4rem 1.6rem; }
+  .newspaper-body{ grid-template-columns: 1fr; }
+}
+
+/* items */
+.news-item{
+  padding: 0.2rem 0;
+}
+
+.news-label{
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #7c1c28;
+  margin-bottom: 0.35rem;
+}
+
+.news-item p{
+  margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  color: #0c0c0e;
+}
+
+/* FOOTER */
+.newspaper-footer{
+  position: relative;
+  margin-top: 1.8rem;
+  text-align: center;
+  padding-top: 1.4rem;
+}
+
+.newspaper-footnote{
+  margin: 0.9rem 0 0;
+  font-size: 0.95rem;
+  color: var(--color-cuartario);
+  font-style: italic;
+}
+
+/* sello */
+.stamp{
+  position: absolute;
+  right: 28px;
+  top: -10px;
+  transform: rotate(-10deg);
+  border: 2px solid rgba(124,28,40,0.55);
+  color: rgba(124,28,40,0.85);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background: rgba(232,196,196,0.25);
+  backdrop-filter: blur(2px);
+}
 
 

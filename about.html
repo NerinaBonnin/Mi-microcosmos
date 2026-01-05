@@ -59,111 +59,161 @@
                     </div>
                 </div>
 
-                <h2>Mis tops de favoritos</h2>
+                
                 <div class="about-chips mt-4">
-                    <span class="chip">☕ té</span>
+                    <span class="chip">☕ Té</span>
                     <span class="chip">🥋 Taekwon-Do</span>
-                    <span class="chip">📚 leer & escribir</span>
-                    <span class="chip">🕯️ terror & paranormal</span>
+                    <span class="chip">📚 Leer</span>
+                    <span class="chip">📕 Escribir</span>
+                    <span class="chip">🎧 Escuchar música</span>
+                    <span class="chip">📸 Hacer videitos</span>
+                    <span class="chip">📓 Estudiar</span>
+                    <span class="chip">✈️ Viajar</span>
+                    <span class="chip">🔎 Investigar</span>
                 </div>
             </div>
             </div>
         </section>
 
 
-        <!-- BLOQUE: "mi versión corta" + "lo que me define" -->
-        <section class="row g-4 mb-5">
-            <div class="col-lg-6">
-                <div class="about-card p-4">
-                    <h2 class="h3 fw-bold mb-3">Mi versión corta</h2>
-                    <p class="mb-0">Soy curiosa, sensible y bastante observadora. Me gusta lo simple, pero también me fascina lo oscuro (de forma estética, prometo). Me encanta crear, investigar cosas que dan escalofríos, y encontrar significado en detalles chiquitos.</p>
-                </div>
-            </div>
+        <!-- BLOQUE:"lo que me define" -->
+        <section class="about-defines newspaper-wrap">
+            <article class="newspaper-card" aria-label="Cosas que me definen">
+                
+                <header class="newspaper-header">
+                    <div class="newspaper-kicker">Edición personal • Microcosmos</div>
+                    
+                    <h2 class="newspaper-title">Cosas que me definen</h2>
+                    
+                    <div class="newspaper-meta">
+                        <span class="newspaper-date" id="newspaperDate">—</span>
+                        <span class="newspaper-sep">•</span>
+                        <span class="newspaper-tag">Notas de Neri</span>
+                    </div>
+                    
+                    <div class="newspaper-rule"></div>
+                </header>
+                
+                <div class="newspaper-body">
+                    <div class="news-item">
+                        <span class="news-label">LO QUE ME CALMA</span>
+                        <p>Salir afuera para disfrutar de la naturaleza con un buen libro en las manos</p>
+                    </div>
 
-            <div class="col-lg-6">
-                <div class="about-card p-4">
-                    <h2 class="h3 fw-bold mb-3">Cosas que me definen</h2>
-                    <ul class="about-list mb-0">
-                        <li><strong>Mi ritual:</strong> té + música + algo para anotar.</li>
-                        <li><strong>Mi mood:</strong> “calma” con un toque de misterio.</li>
-                        <li><strong>Mi talento oculto:</strong> obsesionarme con un tema 3 días seguidos.</li>
-                        <li><strong>Mi debilidad:</strong> historias, símbolos, teorías.</li>
-                    </ul>
+                    <div class="news-item">
+                        <span class="news-label">MI MOMENTO FAVORITO DEL DIA</span>
+                        <p>Cuando baja el sol y puedo ver el atardecer</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="news-label">MI DEBILIDAD</span>
+                        <p>historia, teorías conpirativas, paranormal, datos curiosos</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="news-label">MI LUGAR SEGURO</span>
+                        <p>mi pieza + auriculares + algo para escribir</p>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
 
         <!-- TIMELINE PERSONAL -->
-        <section class="mb-5">
-            <div class="d-flex align-items-end justify-content-between gap-3 mb-3">
-                <div>
-                    <h2 class="fw-bold mb-1">Mini línea del tiempo</h2>
-                    <p class="mb-0 about-muted">Momentos simples que me fueron armando.</p>
-                </div>
-                <button id="toggleTimeline" class="btn btn-outline-dark btn-sm">Mostrar/ocultar</button>
-            </div>
-
-            <div id="timeline" class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-date">Antes</p>
-                        <h3 class="timeline-title">Me fui conociendo</h3>
-                        <p class="timeline-text">Aprendí a escucharme más, a bajar un cambio y a elegir lo que me hace bien.</p>
+        <section class=" timeline mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div>
+                        <h2 class="fw-bold mb-1">Fragmentos de mi</h2>
+                        <p class="mb-0 about-muted">Pensamientos sueltos que me representan</p>
                     </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-date">Hace un tiempo</p>
-                        <h3 class="timeline-title">Empecé a crear en serio</h3>
-                        <p class="timeline-text">Me animé a compartir ideas, historias y pensamientos con una estética propia.</p>
-                    </div>
-                </div>
+                    <button id="toggleTimeline" class="btn btn-outline-dark btn-sm">Mostrar/ocultar</button>
+               
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-date">Ahora</p>
-                        <h3 class="timeline-title">Este microcosmos</h3>
-                        <p class="timeline-text">Un lugar para escribir, debatir teorías y hacer comunidad de forma cuidada.</p>
+                <div id="timeline" class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Un miedo</h3>
+                            <p class="timeline-text">Me dan miedo las mariposas (no me juzguen) y la soledad</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Algo que me salvo</h3>
+                            <p class="timeline-text">Mi mas grande salvación fue bts, su musica me sana el alma</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Una contradicción</h3>
+                            <p class="timeline-text">Me da miedo estar sola pero me gusta la soledad, siento que las dos cosas no son lo mismo</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Lo que todavía estoy aprendiendo</h3>
+                            <p class="timeline-text">No depender de los demas en mi estabilidad emocional y tener mas autoestima</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Algo que no quiero perder</h3>
+                            <p class="timeline-text">Mi familia, mis amigos y mi personalidad</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Un pensamiento recurrente</h3>
+                            <p class="timeline-text">¿Lograré todo lo que me proponga?</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FAVORITOS (moodboard mini) -->
-        <section class="mb-5">
-            <h2 class="fw-bold mb-1">Mis favoritos (versión mini)</h2>
-            <p class="about-muted mb-4">Cositas que me gustan y me representan.</p>
+        <section class="mb-5 fav-section">
+            <div class="fav-inner">
+                <h2 class="fav-title fw-bold mb-1">Mis favoritos (versión mini)</h2>
+                <p class="fav-subtitle about-muted mb-4">Cositas que me gustan y me representan.</p>
+                
+                <div class="row g-3">
+                    <div class="col-6 col-md-3">
+                        <div class="fav-tile">
+                            <p class="fav-label">📖 Libro</p>
+                            <p class="fav-text">Historias con atmósfera</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-md-3">
+                        <div class="fav-tile">
+                            <p class="fav-label">🎧 Música</p>
+                            <p class="fav-text">Playlists para pensar</p>
+                        </div>
+                    </div>
             
-            <div class="row g-3">
-                <div class="col-6 col-md-3">
-                    <div class="fav-tile">
-                        <p class="fav-label">📖 Libro</p>
-                        <p class="fav-text">Historias con atmósfera</p>
+                    <div class="col-6 col-md-3">
+                        <div class="fav-tile">
+                            <p class="fav-label">🕯️ Estética</p>
+                        <p class="fav-text">Grain + tonos cálidos</p>
                     </div>
                 </div>
                 
                 <div class="col-6 col-md-3">
                     <div class="fav-tile">
-                        <p class="fav-label">🎧 Música</p>
-                        <p class="fav-text">Playlists para pensar</p>
+                        <p class="fav-label">🌙 Tema</p>
+                        <p class="fav-text">Misterios de internet</p>
                     </div>
-                </div>
-        
-                <div class="col-6 col-md-3">
-                    <div class="fav-tile">
-                        <p class="fav-label">🕯️ Estética</p>
-                    <p class="fav-text">Grain + tonos cálidos</p>
-                </div>
-            </div>
-            
-            <div class="col-6 col-md-3">
-                <div class="fav-tile">
-                    <p class="fav-label">🌙 Tema</p>
-                    <p class="fav-text">Misterios de internet</p>
                 </div>
             </div>
         </section>
@@ -191,7 +241,7 @@
                 <a href="redes-sociales.html">Redes sociales</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-            <p class="small">© 2025 Neri — Mi microcosmos</p>
+            <p class="small">© 2026 Neri — Mi microcosmos</p>
         </footer>
 
         <!-- MODAL INFO -->
